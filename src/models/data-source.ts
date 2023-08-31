@@ -1,9 +1,10 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
+import 'dotenv/config';
 
 export const AppDataSource = new DataSource({
     type: "mysql",
-    host: "mydb.cnpntblhte9k.ap-southeast-1.rds.amazonaws.com",
+    host: "database-moneylover.cvawwr2w27qn.ap-southeast-1.rds.amazonaws.com",
     port: 3306,
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,

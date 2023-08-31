@@ -14,6 +14,8 @@ import iconWalletRouter from "./src/routers/IconWallet.router";
 import walletRoleRouter from "./src/routers/WalletRole.router";
 import transactionRouter from "./src/routers/Transaction.router";
 import UserController from "./src/controllers/User.controller";
+import 'dotenv/config';
+
 const port = process.env.PORT || 5000;
 
 AppDataSource.initialize()
@@ -41,7 +43,7 @@ app.use('/api', transactionRouter);
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://money-lover-demo.vercel.app",
+        origin: "https://money-lover-fe.vercel.app",
         methods: ["GET", "POST", "DELETE", "PUT"],
         credentials: true
     }

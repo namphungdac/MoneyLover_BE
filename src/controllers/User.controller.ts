@@ -94,7 +94,7 @@ class UserController {
                 newUser.verifyEmailToken = verifyEmailToken;
                 let result = await UserController.userRepository.save(newUser);
                 if (result) {
-                    let content = `<h3>Please <a href="https://money-lover-demo.vercel.app/verify/${verifyEmailToken}">click here</a> to verify your email</h3>`
+                    let content = `<h3>Please <a href="https://money-lover-fe.vercel.app/verify/${verifyEmailToken}">click here</a> to verify your email</h3>`
                     let subject = `Confirmed Email Register`
                     await UserController.sendEmail(email, subject, content).then(() => {
                         res.status(200).json({
