@@ -19,12 +19,13 @@ import CategoryController from "./Category.controller";
 const crypto = require('crypto');
 
 const GOOGLE_MAILER_CLIENT_ID =
-    '420362997504-21gqqs491gttfqp41skjbfe2776dq15t.apps.googleusercontent.com';
-const GOOGLE_MAILER_CLIENT_SECRET = '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';
+    '270667601949-c2ikas9drne79jrge3e0vlf7de10uh04.apps.googleusercontent.com';
+const GOOGLE_MAILER_CLIENT_SECRET = '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';
 const GOOGLE_MAILER_REFRESH_TOKEN =
     // '1//04k5BLOr8_REdCgYIARAAGAQSNwF-L9Irg28V3sQhJPXgiDU3i51Bdymwdh7oTU5xWOhRf4aNWHZVD4mMg1Uaf5W1KPEyMOU1VkI';
-    '1//04gHg5CFlFQkXCgYIARAAGAQSNwF-L9IrledNYNcoTY0xOrUBXTRJwyIafv2EangPa-FMD3hiI1Kfd9WT00a3fJEPiOBcbC37TtA';
-const ADMIN_EMAIL_ADDRESS = 'tnhieutn@gmail.com';
+    //'1//04gHg5CFlFQkXCgYIARAAGAQSNwF-L9IrledNYNcoTY0xOrUBXTRJwyIafv2EangPa-FMD3hiI1Kfd9WT00a3fJEPiOBcbC37TtA';
+    '1//04ITO-7bhYyYECgYIARAAGAQSNwF-L9IrIbrnd_Y9L1Mdxl_NjRdFeCxdyPIiqOROgOmI-ZpSyixxy2lSiZWHEYcU8xCxzSXLyH4';
+const ADMIN_EMAIL_ADDRESS = 'phungdacnam1997@gmail.com';
 
 // Khởi tạo OAuth2Client với Client ID và Client Secret
 const myOAuth2Client = new OAuth2Client(
